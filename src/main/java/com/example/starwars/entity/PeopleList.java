@@ -4,12 +4,16 @@ import java.util.List;
 
 public class PeopleList {
 
-  private Integer count;
+  private String count;
   private String next;
   private String previous;
   private List<People> results;
 
   public PeopleList() {
+  }
+
+  public PeopleList(String count) {
+    this.count = count;
   }
 
   @Override
@@ -22,7 +26,7 @@ public class PeopleList {
         '}';
   }
 
-  public Integer getCount() {
+  public String getCount() {
     return count;
   }
 

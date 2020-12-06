@@ -17,14 +17,18 @@ public class StarWars {
 
 
   public PeopleList getAllPeople(){
-    return null;
+    return webClient
+        .method(HttpMethod.GET)
+        .uri("/people/")
+        .retrieve()
+        .bodyToMono(PeopleList.class)
+        .block();
   }
 
   public People getPeople(Long id) {
-
     return webClient
         .method(HttpMethod.GET)
-        .uri("/{id}", id)
+        .uri("/people/{id}/", id)//A falta da segunda barra me causou muitos problemas
         .retrieve()
         .bodyToMono(People.class)
         .block();
