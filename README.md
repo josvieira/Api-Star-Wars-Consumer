@@ -45,9 +45,12 @@ A aplicação está com o swagger configurado, sendo possível acessar pelo ende
 - Pesquisar e aprender a uitlizar uma ferramenta para consumir uma API externa dentro do código;
 
 ## Melhorias
-- A cobertura de testes, foram desenvolvidos testes unitários para a maior parte das classes, mas não para todos os métodos;
+- Melhorar a cobertura de testes, foram desenvolvidos testes unitários para a maior parte das classes, mas não para todos os métodos;
   - Desenvolver outros níveis de testes além dos unitários;
 - Utilizar do Docker-Compose para orquestrar a utilização dos Containers ao invés de fazer de forma manual;
+- Implemnetar a busca pelos demais temas, pois foi implementada apenas a de people;
+- Descobri por que o Webclient não estava recebendo um retorno correto quando a uri estava sem o "s" do "HTTPS";
+
 
 ## Aprendizados
 - Aprendi mais sobre testes unitários com JUnit e Mockito;
